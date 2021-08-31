@@ -35,22 +35,22 @@ public class TransfGeo extends JFrame {
         
         public TranformaGeo(String modo) {
             iniciaMatrizes();
-          System.out.println(modo);
+
             addKeyListener(new KeyAdapter() {
             	@Override
             	 public void keyPressed(KeyEvent evt) {
-            		 System.out.println(modo + "teste");
+            	
             		 switch(modo) {
             		 case "escala":
-            			 if(evt.getKeyCode() == KeyEvent.VK_LEFT) {System.out.println(0); transformaEscala1();}
+            			 if(evt.getKeyCode() == KeyEvent.VK_LEFT) { transformaEscala1();}
             			 else if(evt.getKeyCode() == KeyEvent.VK_RIGHT) {transformaEscala2();}
             		  break;
             		 case "translacao":
-            			 if(evt.getKeyCode() == KeyEvent.VK_LEFT) {System.out.println(1); transformaTranslada1();}
+            			 if(evt.getKeyCode() == KeyEvent.VK_LEFT) { transformaTranslada1();}
             			 else if(evt.getKeyCode() == KeyEvent.VK_RIGHT) {transformaTranslada2();}
             		  break;
             		 case "rotacao":
-            			 if(evt.getKeyCode() == KeyEvent.VK_LEFT) {System.out.println(2); transformaRotacao1();}
+            			 if(evt.getKeyCode() == KeyEvent.VK_LEFT) { transformaRotacao1();}
             			 else if(evt.getKeyCode() == KeyEvent.VK_RIGHT) {transformaRotacao2();}
             		  break;
             		 }

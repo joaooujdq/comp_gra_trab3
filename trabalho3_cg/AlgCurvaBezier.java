@@ -28,6 +28,7 @@ public class AlgCurvaBezier extends JFrame {
         float rWidth = 10.0F, rHeight = 10.0F, pixelSize;
         
          Bezier() {
+        	 //o minimo de pontos deve ser 4
                 addMouseListener(new MouseAdapter() {
                 public void mousePressed(MouseEvent evt) {
                     float x = fx(evt.getX()), y = fy(evt.getY());
